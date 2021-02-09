@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Some info about what mihail antonov does inside and outside of work. [mihail-antonov.dev](https://mihail-antonov.dev/).

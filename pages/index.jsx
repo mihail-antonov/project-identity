@@ -1,19 +1,22 @@
 import Layout from "../components/layout";
 import styles from "../components/layout.module.css"
-import utilStyles from "../styles/utils.module.css"
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Work() {
+export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>mihail-antonov.dev</title>
       </Head>
-      <div id="main">
-      <div className={styles.container}>
-            <h1 className={utilStyles.heading2Xl}>General Kenobi!</h1>
+
+      <div id="home">
+        <div className={styles.container}>
+          <div className="home-wrapper">
+            <h2>Home page</h2>
+            <p>This is going to be different. ya know.</p>
           </div>
+        </div>
       </div>
     </Layout>
   );
