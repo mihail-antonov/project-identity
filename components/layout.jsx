@@ -17,7 +17,9 @@ export default function Layout({ children, home }) {
             </Head>
 
             <header id="header">
-                <h1 className={utilStyles.heading2Xl}>General Kenobi!</h1>
+                <div className={styles.container}>
+                    <h1 className={utilStyles.heading2Xl}>General Kenobi!</h1>
+                </div>
             </header>
             <main id="main">
                 {children}
