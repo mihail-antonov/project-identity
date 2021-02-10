@@ -1,7 +1,7 @@
+import Head from "next/head";
 import Layout from "../components/layout";
 import styles from "../components/layout.module.css";
-import Head from "next/head";
-import Link from "next/link";
+import utilStyles from "../styles/utils.module.css";
 
 export default function About() {
   return (
@@ -13,45 +13,69 @@ export default function About() {
       <div className="about">
         <div className={styles.container}>
           <div className={styles.mainwrapper}>
-            <div className="about">
-              <h2>About</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
-                </p>
+            <div className={styles.grid2}>
+              <div className="about-text">
+                <h2>About</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
+                  volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
+                  In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
+                  Duis a eleifend eros, commodo ornare libero. Nunc sit amet
+                  molestie dui. In porttitor gravida erat, at pellentesque elit
+                  pharetra sit amet. Interdum et malesuada fames ac ante ipsum
+                  primis in faucibus.
+                  </p>
+              </div>
+              <div className="about-image">
+                <p>Text or image here</p>
+              </div>
             </div>
-            <div className="quote">
-              <h3>Quote</h3>
-              <p>Информация за видовете работа + cms (под формата на табове)</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
-              </p>
-            </div>
-            <div className="skills">
-              <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
-                </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="experience">
+        <div className={styles.darkwrapper}>
+          <div className={styles.container}>
+            <h2 className={utilStyles.darkwrappertitle}>Experiences</h2>
+            <p className={utilStyles.darkwrappertext}>
+              Информация за видовете работа + cms (под формата на табове)
+            </p>
+            <p className={utilStyles.darkwrappertext}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
+              volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
+              In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
+              Duis a eleifend eros, commodo ornare libero. Nunc sit amet
+              molestie dui. In porttitor gravida erat, at pellentesque elit
+              pharetra sit amet. Interdum et malesuada fames ac ante ipsum
+              primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="about">
+        <div className={styles.container}>
+          <div className={styles.mainwrapper}>
+            <div className={styles.grid2}>
+              <div className="about-text">
+                <h2>About</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
+                  volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
+                  In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
+                  Duis a eleifend eros, commodo ornare libero. Nunc sit amet
+                  molestie dui. In porttitor gravida erat, at pellentesque elit
+                  pharetra sit amet. Interdum et malesuada fames ac ante ipsum
+                  primis in faucibus.
+                  </p>
+              </div>
+              <div className="about-image">
+                <p>Text or image here</p>
+              </div>
             </div>
           </div>
         </div>

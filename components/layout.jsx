@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { Cross as Hamburger } from 'hamburger-react'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import { IconButton } from "@material-ui/core";
@@ -12,25 +13,6 @@ export const googleDescription = '';
 export default function Layout({ children, home }) {
   return (
     <>
-      <style jsx global>
-        {`
-          body {
-              margin: 0;
-            }
-            h1, h2, h3, h4, h5 {
-                color: #121212;
-                font-family: 'Manrope', sans-serif;
-                font-weight: 500;
-                margin: 0 0 15px 0;
-            }
-            p {
-                color: #121212;
-                font-family: 'Roboto', sans-serif;
-                margin: 0 0 15px 0;
-                line-height: 1.6;
-            }
-            `}
-      </style>
       <Head>
         <meta charset="utf-8" />
         <meta name="description" content={googleDescription} />
@@ -50,9 +32,7 @@ export default function Layout({ children, home }) {
               <h1 className={utilStyles.logotitle}><a href="/" className={utilStyles.logotitlelink}>{siteTitle}</a></h1>
             </div>
             <div className={styles.headerwrapperbtn}>
-              <IconButton style={{ color: '#121212' }} aria-label="menu-collapse">
-                <MenuIcon />
-              </IconButton>
+            <Hamburger size={24} direction="right" />
             </div>
             <div className={styles.headerwrappernav}>
               <nav>

@@ -1,12 +1,33 @@
+/* Grid */
 .container {
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+/* Grid */
+
 .header {
-  padding: 16px 0;
-  box-shadow: 0 0 6px rgb(0 0 0 / 15%)
+  padding: 6px 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .headerwrapper {
@@ -26,15 +47,15 @@
 
 .headernavli {
   display: inline;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 14px;
 }
 
 .headernavlink {
   color: #121212;
   font-family: 'Manrope', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .headernavlink:hover {
@@ -42,26 +63,13 @@
   transition: 0.3s;
 }
 
-.mainwrapper {
+.darkwrapper {
+  background: #121212;
   padding: 20px 0;
 }
 
-.grid2cols {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 24px;
-}
-
-.grid3cols {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 24px;
-}
-
-.grid4cols {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 24px;
+.mainwrapper {
+  padding: 20px 0;
 }
 
 .footer {
@@ -80,28 +88,32 @@
     max-width: 720px;
   }
 
-  .grid2cols {
+  .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid4cols {
+  .grid4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .darkwrapper {
+    padding: 40px 0;
   }
 
   .mainwrapper {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .container {
     max-width: 960px;
   }
 
-  .grid3cols {
+  .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -120,7 +132,7 @@
     max-width: 1140px;
   }
 
-  .grid4cols {
+  .grid4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -131,8 +143,12 @@
     max-width: 1320px;
   }
 
+  .darkwrapper {
+    padding: 80px 0;
+  }
+
   .mainwrapper {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 }
 

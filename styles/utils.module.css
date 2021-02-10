@@ -1,17 +1,27 @@
 .logotitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
   margin: 0;
 }
 
 .logotitlelink {
-  text-decoration: none;
   color: #121212;
-
+  text-decoration: none;
+  padding: 10px 20px 10px 0;
 }
 
 .logotitlelink:hover {
   color: #1a237e;
   transition: 0.3s;
+}
+
+.darkwrappertitle {
+    color: #fafafa;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.darkwrappertext {
+  color: #EEEEEE;
 }
