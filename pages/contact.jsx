@@ -1,6 +1,10 @@
-import Layout from "../components/layout";
-import styles from "../components/layout.module.css";
-import Head from "next/head";
+import Head from "next/head"
+import Layout from "../components/layout/layout"
+
+import styles from "../components/layout/layout.module.css"
+import utilStyles from "../styles/utils.module.css"
+import specific from "../styles/specific/about.module.css"
+
 
 export default function Contact() {
   return (

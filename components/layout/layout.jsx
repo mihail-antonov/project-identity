@@ -1,14 +1,13 @@
-import Head from "next/head";
-import Link from "next/link";
+import Head from "next/head"
+import ActiveLink from '../links/activeLinks'
 import { Cross as Hamburger } from 'hamburger-react'
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import { IconButton } from "@material-ui/core";
-import MenuIcon from '@material-ui/icons/Menu';
 
-export const siteTitle = "mihail-antonov.dev";
-export const googleKeywords = '';
-export const googleDescription = '';
+import styles from "../layout/layout.module.css"
+import utilStyles from "../../styles/utils.module.css"
+
+export const siteTitle = "mihail-antonov.dev"
+export const googleKeywords = ''
+export const googleDescription = ''
 
 export default function Layout({ children, home }) {
   return (
@@ -29,7 +28,9 @@ export default function Layout({ children, home }) {
         <div className={styles.container}>
           <div className={styles.headerwrapper}>
             <div className="header-wrapper-logo">
-              <h1 className={utilStyles.logotitle}><a href="/" className={utilStyles.logotitlelink}>{siteTitle}</a></h1>
+              <h1 className={utilStyles.logotitle}>
+                <a href="/" className={utilStyles.logotitlelink}>{siteTitle}</a>
+              </h1>
             </div>
             <div className={styles.headerwrapperbtn}>
             <Hamburger size={24} direction="right" />
@@ -38,24 +39,24 @@ export default function Layout({ children, home }) {
               <nav>
                 <ul>
                   <li className={styles.headernavli}>
-                    <Link href="/">
+                    <ActiveLink activeClassName="active" href="/">
                       <a className={styles.headernavlink}>Home</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                   <li className={styles.headernavli}>
-                    <Link href="/work">
+                    <ActiveLink activeClassName="active" href="/work">
                       <a className={styles.headernavlink}>Work</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                   <li className={styles.headernavli}>
-                    <Link href="/about">
+                    <ActiveLink activeClassName="active" href="/about">
                       <a className={styles.headernavlink}>About</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                   <li className={styles.headernavli}>
-                    <Link href="/contact">
-                      <a className={styles.headernavlink}>Contact</a>
-                    </Link>
+                    <ActiveLink activeClassName="active" href="/contact">
+                      <a className={styles.headernavlink}>Contacts</a>
+                    </ActiveLink>
                   </li>
                 </ul>
               </nav>
