@@ -26,7 +26,7 @@ export default function Home() {
               <div className="home-hello-text">
                 <h2>Hey, I'm Mihail!</h2>
                 <p>I game, code and drink coffee.</p>
-                <p>Frontend developer who specializes in creating UI/UX design and coding e-commerce templates for different CMS. Basicly everything for you online shop.</p>
+                <p>Frontend developer who specializes in creating UI/UX design and coding e-commerce themes for different content management systems. Basicly everything for you online shop.</p>
                 <button className={styles.calltoaction}>Contact me</button>
               </div>
             </div>
