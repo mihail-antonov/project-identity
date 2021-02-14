@@ -1,5 +1,5 @@
 import Head from "next/head"
-import ActiveLink from '../links/activeLinks'
+import ActiveLink from '../links/activelinks'
 import { Cross as Hamburger } from 'hamburger-react'
 
 import styles from "../layout/layout.module.css"
