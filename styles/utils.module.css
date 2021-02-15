@@ -1,5 +1,5 @@
 .logotitle {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 600;
   margin: 0;
@@ -16,12 +16,54 @@
   transition: 0.3s;
 }
 
-.darkwrappertitle {
-    color: #fafafa;
-    font-size: 56px;
-    font-weight: 900;
+.titlesubheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
 
-.darkwrappertext {
-  color: #EEEEEE;
+.titleheading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+  max-width: 650px;
+}
+
+.titlesubtext {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  max-width: 600px;
+}
+
+.titlehighlight {
+  text-decoration: underline;
+}
+
+.calltoaction {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: #121212;
+  border: 2px solid #121212;
+  border-radius: 40px;
+  padding: 20px 50px;
+}
+
+@media (min-width: 991px) {
+  .titlesubheading {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+  }
+  
+  .titleheading {
+    font-size: 46px;
+  }
+  
+  .titlesubtext {
+    font-size: 18px;
+  }
 }

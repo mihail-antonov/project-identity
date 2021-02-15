@@ -10,7 +10,9 @@ export default function Work() {
   return (
     <Layout>
       <Head>
-        <title>Work</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content=" " />
+        <title>mihail-antonov.dev - Work</title>
       </Head>
       
       <div id="work">

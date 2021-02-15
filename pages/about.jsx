@@ -10,7 +10,9 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About</title>
+        <meta name="description" content=" " />
+        <meta name="keywords" content=" " />
+        <title>mihail-antonov.dev - About</title>
       </Head>
 
       <div className="about">
