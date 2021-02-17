@@ -28,41 +28,33 @@ ActiveLink.propTypes = {
   activeClassName: PropTypes.string.isRequired,
 };
 
-const Links = [
+const links = [
   {
     name: "Home",
-    url: "/",
+    path: "/",
   },
   {
     name: "Work",
-    url: "/work",
+    path: "/work",
   },
   {
     name: "About",
-    url: "/about",
+    path: "/about",
   },
   {
     name: "Contact",
-    url: "/contact",
+    path: "/contact",
   },
-].map((link, index) => {
-  return (
-    <li key={index} className={styles.headernavli}>
-      <ActiveLink activeClassName="active" href={link.url}>
-        <a className={styles.headernavlink}>{link.name}</a>
-      </ActiveLink>
-    </li>
-  );
-});
+];
 
 export default function Header() {
   return (
     <div className={styles.headerwrapper}>
       <div className="header-wrapper-logo">
         <h1 className={styles.logotitle}>
-          <a href="/" className={styles.logotitlelink}>
-            mihail-antonov.dev
-          </a>
+          <Link href="/">
+            <a className={styles.logotitlelink}>mihail-antonov.dev</a>
+          </Link>
         </h1>
       </div>
       <div className={styles.headerwrapperbtn}>
@@ -70,7 +62,17 @@ export default function Header() {
       </div>
       <div className={styles.headerwrappernav}>
         <nav>
-          <ul>{Links}</ul>
+          <ul>
+            {links.map((link, index) => {
+              return (
+                <li key={index} className={styles.headernavli}>
+                  <ActiveLink activeClassName="active" href={link.path}>
+                    <a className={styles.headernavlink}>{link.name}</a>
+                  </ActiveLink>
+                </li>
+              );
+            })}
+          </ul>
         </nav>
       </div>
     </div>

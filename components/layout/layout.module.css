@@ -22,7 +22,6 @@
   grid-template-columns: 1fr;
   grid-gap: 24px;
 }
-/* Grid */
 
 /* Main */
 .mainwrapper {
@@ -31,7 +30,7 @@
 
 /* Title Section */
 .titleavatar {
-  max-width: 106px;   
+  max-width: 106px;
   margin: 0 auto 30px auto;
 }
 
@@ -44,7 +43,6 @@
   flex-flow: column nowrap;
   align-items: center;
 }
-/* Title Section */
 
 @media (min-width: 576px) {
   .container {
@@ -68,14 +66,13 @@
   }
 }
 
-
 @media (min-width: 991px) {
   .container {
     max-width: 960px;
   }
 
   .titleavatar {
-    max-width: 124px;   
+    max-width: 124px;
   }
 
   .grid3 {
@@ -100,4 +97,3 @@
     max-width: 1320px;
   }
 }
-

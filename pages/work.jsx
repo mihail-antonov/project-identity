@@ -1,10 +1,9 @@
-import Head from "next/head"
-import Layout from "../components/layout/layout"
+import Head from "next/head";
+import Layout from "../components/layout/layout";
 
-import styles from "../components/layout/layout.module.css"
-import utilStyles from "../styles/utils.module.css"
-import specific from "../styles/specific/work.module.css"
-
+import styles from "../components/layout/layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import specific from "../styles/specific/work.module.css";
 
 export default function Work() {
   return (
@@ -14,21 +13,23 @@ export default function Work() {
         <meta name="keywords" content=" " />
         <title>mihail-antonov.dev - Work</title>
       </Head>
-      
+
       <div id="work">
         <div className={styles.container}>
           <div className={styles.mainwrapper}>
             <div className="work-showcase">
               <h2>Work</h2>
               <p>Кратка информация за работата</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.</p>
+                volutpat. Cras gravida a augue nec tincidunt. Suspendisse
+                potenti. In turpis nunc, dapibus vitae tincidunt nec, posuere a
+                ligula. Duis a eleifend eros, commodo ornare libero. Nunc sit
+                amet molestie dui. In porttitor gravida erat, at pellentesque
+                elit pharetra sit amet. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
+              </p>
             </div>
             <div className="work-services">
               <h3>Services</h3>
@@ -36,12 +37,12 @@ export default function Work() {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
+                volutpat. Cras gravida a augue nec tincidunt. Suspendisse
+                potenti. In turpis nunc, dapibus vitae tincidunt nec, posuere a
+                ligula. Duis a eleifend eros, commodo ornare libero. Nunc sit
+                amet molestie dui. In porttitor gravida erat, at pellentesque
+                elit pharetra sit amet. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
               </p>
             </div>
             <div className="work-types">
@@ -50,12 +51,12 @@ export default function Work() {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 fermentum mi sem, vel malesuada purus bibendum vel. Aliquam erat
-                volutpat. Cras gravida a augue nec tincidunt. Suspendisse potenti.
-                In turpis nunc, dapibus vitae tincidunt nec, posuere a ligula.
-                Duis a eleifend eros, commodo ornare libero. Nunc sit amet
-                molestie dui. In porttitor gravida erat, at pellentesque elit
-                pharetra sit amet. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus.
+                volutpat. Cras gravida a augue nec tincidunt. Suspendisse
+                potenti. In turpis nunc, dapibus vitae tincidunt nec, posuere a
+                ligula. Duis a eleifend eros, commodo ornare libero. Nunc sit
+                amet molestie dui. In porttitor gravida erat, at pellentesque
+                elit pharetra sit amet. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
               </p>
             </div>
           </div>
