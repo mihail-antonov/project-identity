@@ -3,11 +3,20 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 .headerwrapperbtn {
   display: block;
+}
+
+.headerwrapperbtn div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .headerwrappernav {
@@ -19,7 +28,7 @@
 }
 
 .headernavlink {
-  color: #1c1b20;
+  color: #757575;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -27,7 +36,7 @@
 }
 
 .headernavlink:hover {
-  color: #1a237e;
+  color: #448aff;
   transition: 0.3s;
 }
 

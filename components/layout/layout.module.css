@@ -44,6 +44,16 @@
   align-items: center;
 }
 
+/* Header */
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.footer {
+  border-top: 1px solid #eeeeee;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

@@ -35,6 +35,12 @@
   padding: 20px 50px;
 }
 
+.sub__heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+}
+
 @media (min-width: 991px) {
   .titlesubheading {
     font-size: 24px;

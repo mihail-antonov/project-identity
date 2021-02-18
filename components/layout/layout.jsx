@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
         />
       </Head>
 
-      <header id="header">
+      <header className={styles.header}>
         <div className={styles.container}>
           <Header />
         </div>
@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
 
       <main id="main">{children}</main>
 
-      <footer id="footer">
+      <footer className={styles.footer}>
         <div className={styles.container}>
           <Footer />
         </div>

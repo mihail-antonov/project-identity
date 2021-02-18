@@ -3,11 +3,20 @@
 }
 
 .resume__title {
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   color: #212121;
-  margin: 0 0 10px 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.resume__title svg {
+  margin: 0 0 0 4px;
+  font-size: 18px;
 }
 
 .resume__title:hover {
@@ -15,14 +24,14 @@
   transition: 0.3s;
 }
 
-.resume__specialty {
+.resume__position {
   color: #212121;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0 0 6px 0;
 }
 
-.resume__duration {
+.resume__period {
   color: #616161;
   font-size: 16px;
   font-weight: 400;
