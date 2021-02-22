@@ -3,15 +3,11 @@
 }
 
 .resume__title {
-  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   color: #212121;
   margin: 0 0 16px 0;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
 }
 
 .resume__title svg {
@@ -38,8 +34,7 @@
 }
 
 .resume__subtitle {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   margin: 0 0 40px;
-  text-decoration: underline;
 }

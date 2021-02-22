@@ -49,24 +49,27 @@ const links = [
 
 export default function Header() {
   return (
-    <div className={styles.headerwrapper}>
-      <div className="header-wrapper-logo">
+    <div className={styles.wrapper}>
+      <div className={styles.nav_logo}>
         <h1 className={styles.logotitle}>
           <Link href="/">
             <a className={styles.logotitlelink}>mihail-antonov.dev</a>
           </Link>
         </h1>
       </div>
-      <div className={styles.headerwrapperbtn}>
+      <div className={styles.nav_button}>
         <Hamburger size={26} direction="right" />
       </div>
-      <div className={styles.headerwrappernav}>
+      <div className={styles.nav_list}>
         <nav>
           <ul>
             {links.map((link, index) => {
               return (
-                <li key={index} className={styles.headernavli}>
-                  <ActiveLink activeClassName="active" href={link.path}>
+                <li key={index} className={styles.nav_item}>
+                  <ActiveLink
+                    activeClassName={styles.header_navlink_active}
+                    href={link.path}
+                  >
                     <a className={styles.headernavlink}>{link.name}</a>
                   </ActiveLink>
                 </li>

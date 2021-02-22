@@ -1,4 +1,4 @@
-.headerwrapper {
+.wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   padding: 20px 0;
 }
 
-.headerwrapperbtn {
+.nav_button {
   display: block;
 }
 
@@ -19,30 +19,31 @@
   user-select: none;
 }
 
-.headerwrappernav {
+.nav_list {
   display: none;
 }
 
-.headernavli {
+.nav_item {
   display: inline;
 }
 
 .headernavlink {
   color: #757575;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   text-decoration: none;
   padding: 10px 34px;
 }
 
 .headernavlink:hover {
-  color: #448aff;
+  color: #121212;
   transition: 0.3s;
 }
 
+.header_navlink_active {
+  color: #121212;
+}
+
 .logotitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0;
 }
@@ -54,16 +55,16 @@
 }
 
 .logotitlelink:hover {
-  color: #1a237e;
+  color: #121212;
   transition: 0.3s;
 }
 
 @media (min-width: 991px) {
-  .headerwrapperbtn {
+  .nav_button {
     display: none;
   }
 
-  .headerwrappernav {
+  .nav_list {
     display: block;
   }
 }

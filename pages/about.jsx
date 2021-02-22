@@ -34,14 +34,10 @@ export default function About({ works, educations }) {
               </div>
               <div className={styles.titletextbox}>
                 <h2 className={utilStyles.titleheading}>
-                  Frontend developer based in Bulgaria
+                  Frontend developer with a vision
                 </h2>
                 <p className={utilStyles.titlesubtext}>
-                  Frontend developer who specializes in creating UI/UX design
-                  and coding e-commerce themes for different content management
-                  systems. Basicly{" "}
-                  <span className={utilStyles.titlehighlight}>Everthing</span>{" "}
-                  for you online shop
+                  I game, code and drink coffee.
                 </p>
               </div>
             </div>
@@ -58,14 +54,8 @@ export default function About({ works, educations }) {
                 <h3 className={specific.resume__subtitle}>Work Experience</h3>
                 <div className="work-firm">
                   {works.map(
-                    ({
-                      index,
-                      work_title,
-                      work_url,
-                      work_position,
-                      work_period,
-                    }) => (
-                      <div key={index} className={specific.resume__box}>
+                    ({ work_title, work_url, work_position, work_period }) => (
+                      <div className={specific.resume__box}>
                         <Link href={work_url}>
                           <a className={specific.resume__title} target="_blank">
                             {work_title}
@@ -86,13 +76,12 @@ export default function About({ works, educations }) {
                 <div className="education-institution">
                   {educations.map(
                     ({
-                      index,
                       education_title,
                       education_url,
                       education_position,
                       education_period,
                     }) => (
-                      <div key={index} className={specific.resume__box}>
+                      <div className={specific.resume__box}>
                         <Link href={education_url}>
                           <a className={specific.resume__title} target="_blank">
                             {education_title}

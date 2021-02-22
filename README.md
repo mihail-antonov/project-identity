@@ -1,1 +1,1 @@
-Personal website about what Mihail Antonov does inside and outside of work. - [mihail-antonov.dev](https://mihail-antonov.dev/).
+Hello there! I'm Mihail and this is my personal website built on [NextJS](https://nextjs.org/) framework and [GraphCMS](https://graphcms.com/) headless content management system. It is about what I do for a living, what frontend experiences I possess and how I spend my time off-code. Read the whole story on [mihail-antonov.dev](https://mihail-antonov.dev/)

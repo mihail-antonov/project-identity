@@ -1,0 +1,73 @@
+/* Headings */
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-Light.otf) format("otf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-Regular.otf) format("otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-Medium.otf) format("otf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-SemiBold.otf) format("otf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-Bold.otf) format("otf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-ExtraBold.otf) format("otf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rota";
+  src: local("Rota"), url(/fonts/rota/Rota-Black.otf) format("otf");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* Paragraphs */
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(/fonts/poppins/Poppins-Regular.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(/fonts/poppins/Poppins-Medium.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(/fonts/poppins/Poppins-SemiBold.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}

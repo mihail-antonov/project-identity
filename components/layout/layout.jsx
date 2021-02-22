@@ -20,12 +20,6 @@ export default function Layout({ children, home }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>{siteTitle}</title>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        />
       </Head>
 
       <header className={styles.header}>
