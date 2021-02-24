@@ -1,15 +1,21 @@
 import link from "next/link";
-import styles from "./footer.module.css";
+
+import styles from "./footer.module.scss";
+import layout from "../layout/layout.module.scss";
 
 export default function Header() {
   return (
-    <div className={styles.footerwrapper}>
-      <div className="footer-wrapper-socials">
-        <p>Socials Links here</p>
+    <footer className={styles.footer}>
+      <div className={layout.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.social}>
+            <p>Socials Links here</p>
+          </div>
+          <div className={styles.copyright}>
+            <p>2021 © All rights reserved</p>
+          </div>
+        </div>
       </div>
-      <div className="footer-wrapper-name">
-        <p>hi@mihail-antonov.dev</p>
-      </div>
-    </div>
+    </footer>
   );
 }

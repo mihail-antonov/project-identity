@@ -1,0 +1,81 @@
+.cover {
+  display: block;
+
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px 0;
+
+    .image_box {
+      max-width: 100px;
+      margin: 0 0 20px 0;
+
+      .image_box_img {
+        border-radius: 50%;
+      }
+    }
+
+    .text_box {
+      display: block;
+
+      .text_box_caption {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+        margin: 0 0 10px 0;
+      }
+
+      .text_box_title {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+        margin: 0 0 20px 0;
+        max-width: 650px;
+      }
+
+      .text_box_paragraph {
+        font-size: 16px;
+        text-align: center;
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .cover {
+    .wrapper {
+      .text_box {
+        .text_box_caption {
+          font-size: 22px;
+        }
+
+        .text_box_title {
+          font-size: 40px;
+        }
+
+        .text_box_paragraph {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cover {
+    .wrapper {
+      .text_box {
+        .text_box_caption {
+          font-size: 24px;
+        }
+
+        .text_box_title {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}

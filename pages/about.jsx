@@ -6,9 +6,9 @@ import { GraphQLClient } from "graphql-request";
 
 import CallMadeIcon from "@material-ui/icons/CallMade";
 
-import styles from "../components/layout/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import specific from "../styles/specific/about.module.css";
+import layout from "../components/layout/layout.module.scss";
+import cover from "../styles/partials/cover.module.scss";
+import styles from "../styles/about.module.scss";
 
 export default function About({ works, educations }) {
   return (
@@ -19,104 +19,96 @@ export default function About({ works, educations }) {
         <title>mihail-antonov.dev - About</title>
       </Head>
 
-      <div className="home-title">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
-            <div className="home-title-content">
-              <div className={styles.titleavatar}>
-                <Image
-                  src="/img/avatar.png"
-                  alt="hi"
-                  className={styles.titleavatarimg}
-                  width="480px"
-                  height="480px"
-                />
+      <div className={cover.cover}>
+        <div className={layout.container}>
+          <div className={cover.wrapper}>
+            <div className={cover.image_box}>
+              <Image
+                src="/img/avatar.png"
+                alt="hi"
+                className={cover.image_box_img}
+                width="480px"
+                height="480px"
+              />
+            </div>
+            <div className={cover.text_box}>
+              <h2 className={cover.text_box_title}>
+                Frontend developer with a vision
+              </h2>
+              <p className={cover.text_box_paragraph}>
+                I game, code and drink coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.resume}>
+        <div className={layout.container}>
+          <div className={styles.wrapper}>
+            <h2 className={styles.resume__heading}>Resume</h2>
+            <div className={layout.grid2}>
+              <div className={styles.resume__content}>
+                <h3 className={styles.resume__subheading}>Work Experience</h3>
+                {works.map(
+                  ({ work_title, work_url, work_position, work_period }) => (
+                    <div className={styles.resume__box}>
+                      <Link href={work_url}>
+                        <a className={styles.resume__brand} target="_blank">
+                          {work_title}
+                          <CallMadeIcon className={styles.resume__icon} />
+                        </a>
+                      </Link>
+                      <p className={styles.resume__position}>{work_position}</p>
+                      <p className={styles.resume__period}>{work_period}</p>
+                    </div>
+                  )
+                )}
               </div>
-              <div className={styles.titletextbox}>
-                <h2 className={utilStyles.titleheading}>
-                  Frontend developer with a vision
-                </h2>
-                <p className={utilStyles.titlesubtext}>
-                  I game, code and drink coffee.
-                </p>
+              <div className={styles.resume__content}>
+                <h3 className={styles.resume__subheading}>Education</h3>
+                {educations.map(
+                  ({
+                    education_title,
+                    education_url,
+                    education_position,
+                    education_period,
+                  }) => (
+                    <div className={styles.resume__box}>
+                      <Link href={education_url}>
+                        <a className={styles.resume__brand} target="_blank">
+                          {education_title}
+                          <CallMadeIcon />
+                        </a>
+                      </Link>
+                      <p className={styles.resume__position}>
+                        {education_position}
+                      </p>
+                      <p className={styles.resume__period}>
+                        {education_period}
+                      </p>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="resume">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
-            <h2 className={utilStyles.sub__heading}>Resume</h2>
-            <div className={styles.grid2}>
-              <div className="work-content">
-                <h3 className={specific.resume__subtitle}>Work Experience</h3>
-                <div className="work-firm">
-                  {works.map(
-                    ({ work_title, work_url, work_position, work_period }) => (
-                      <div className={specific.resume__box}>
-                        <Link href={work_url}>
-                          <a className={specific.resume__title} target="_blank">
-                            {work_title}
-                            <CallMadeIcon className={specific.resume__icon} />
-                          </a>
-                        </Link>
-                        <p className={specific.resume__position}>
-                          {work_position}
-                        </p>
-                        <p className={specific.resume__period}>{work_period}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </div>
-              <div className="education-content">
-                <h3 className={specific.resume__subtitle}>Education</h3>
-                <div className="education-institution">
-                  {educations.map(
-                    ({
-                      education_title,
-                      education_url,
-                      education_position,
-                      education_period,
-                    }) => (
-                      <div className={specific.resume__box}>
-                        <Link href={education_url}>
-                          <a className={specific.resume__title} target="_blank">
-                            {education_title}
-                            <CallMadeIcon />
-                          </a>
-                        </Link>
-                        <p className={specific.resume__position}>
-                          {education_position}
-                        </p>
-                        <p className={specific.resume__period}>
-                          {education_period}
-                        </p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="skills">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
-            <h2 className={utilStyles.sub__heading}>Skills</h2>
-            <div className={styles.grid3}>
+      <div className={styles.skills}>
+        <div className={layout.container}>
+          <div className={styles.wrapper}>
+            <h2 className={styles.sub__heading}>Skills</h2>
+            <div className={layout.grid3}>
               <div className="skills-development">
-                <h3 className={specific.resume__subtitle}>Development</h3>
+                <h3 className={styles.resume__subtitle}>Development</h3>
               </div>
               <div className="skills-cms">
-                <h3 className={specific.resume__subtitle}>CMS</h3>
+                <h3 className={styles.resume__subtitle}>CMS</h3>
               </div>
               <div className="skills-tools">
-                <h3 className={specific.resume__subtitle}>Tools</h3>
+                <h3 className={styles.resume__subtitle}>Tools</h3>
               </div>
             </div>
           </div>

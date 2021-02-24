@@ -3,9 +3,9 @@ import Image from "next/image";
 import Layout from "../components/layout/layout";
 import TextField from "@material-ui/core/TextField";
 
-import styles from "../components/layout/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import specific from "../styles/specific/about.module.css";
+import layout from "../components/layout/layout.module.scss";
+import cover from "../styles/partials/cover.module.scss";
+import styles from "../styles/contact.module.scss";
 
 export default function Contact() {
   return (
@@ -16,38 +16,33 @@ export default function Contact() {
         <title>mihail-antonov.dev - Contact</title>
       </Head>
 
-      <div className="contact-title">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
-            <div className="contact-title-content">
-              <div className={styles.titleavatar}>
-                <Image
-                  src="/img/avatar.png"
-                  alt="hi"
-                  className={styles.titleavatarimg}
-                  width="480px"
-                  height="480px"
-                />
-              </div>
-              <div className={styles.titletextbox}>
-                <h2 className={utilStyles.titleheading}>
-                  Hello! I've been waiting for you.
-                </h2>
-                <p className={utilStyles.titlesubtext}>
-                  Fill in the contact form or{" "}
-                  <span className={utilStyles.titlehighlight}>
-                    Send me an email
-                  </span>
-                </p>
-              </div>
+      <div className={cover.cover}>
+        <div className={layout.container}>
+          <div className={cover.wrapper}>
+            <div className={cover.image_box}>
+              <Image
+                src="/img/avatar.png"
+                alt="hi"
+                className={cover.image_box_img}
+                width="480px"
+                height="480px"
+              />
+            </div>
+            <div className={cover.text_box}>
+              <h2 className={cover.text_box_title}>
+                Frontend developer with a vision
+              </h2>
+              <p className={cover.text_box_paragraph}>
+                I game, code and drink coffee.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <div id="contact">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
+        <div className={layout.container}>
+          <div className={styles.wrapper}>
             <div className="contact-info">
               <h2>Contact info</h2>
               <form noValidate autoComplete="off">

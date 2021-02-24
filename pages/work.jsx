@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
 
-import styles from "../components/layout/layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import specific from "../styles/specific/work.module.css";
+import layout from "../components/layout/layout.module.scss";
+import styles from "../styles/work.module.scss";
 
 export default function Work() {
   return (
@@ -15,8 +14,8 @@ export default function Work() {
       </Head>
 
       <div id="work">
-        <div className={styles.container}>
-          <div className={styles.mainwrapper}>
+        <div className={layout.container}>
+          <div className={styles.wrapper}>
             <div className="work-showcase">
               <h2>Work</h2>
               <p>Кратка информация за работата</p>

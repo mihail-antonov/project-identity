@@ -1,0 +1,83 @@
+@import "../../styles/abstracts/_variables.scss";
+
+.header {
+  display: block;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    .nav_logo {
+      display: block;
+
+      .nav_logo_title {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+
+        .nav_logo_link {
+          color: $black;
+          text-decoration: none;
+          padding: 10px 20px 10px 0;
+        }
+
+        .nav_logo_link:hover {
+          color: $hover;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .nav_button {
+      display: block;
+    }
+
+    .nav_bar {
+      display: none;
+
+      nav {
+        .nav_list {
+          padding: 0;
+
+          .nav_item {
+            display: inline;
+
+            .nav_item_link {
+              color: #757575;
+              text-decoration: none;
+              padding: 10px 0 10px 60px;
+            }
+
+            .nav_item_link:hover {
+              color: $hover;
+              transition: 0.3s;
+            }
+
+            .nav_item_link_active {
+              color: $hover;
+              text-decoration: none;
+              padding: 10px 0 10px 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .header {
+    .wrapper {
+      .nav_button {
+        display: none;
+      }
+
+      .nav_bar {
+        display: block;
+      }
+    }
+  }
+}

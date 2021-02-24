@@ -3,7 +3,9 @@ import { useRouter } from "next/router";
 import React, { Children } from "react";
 import PropTypes from "prop-types";
 import { Twirl as Hamburger } from "hamburger-react";
-import styles from "./header.module.css";
+
+import styles from "./header.module.scss";
+import layout from "../layout/layout.module.scss";
 
 const ActiveLink = ({ children, ...props }) => {
   const { asPath } = useRouter();
@@ -12,7 +14,7 @@ const ActiveLink = ({ children, ...props }) => {
 
   const className =
     asPath === props.href || asPath === props.as
-      ? `${childClassName} active`.trim()
+      ? `${styles.nav_item_link_active}` + ``.trim()
       : childClassName;
 
   return (
@@ -22,10 +24,6 @@ const ActiveLink = ({ children, ...props }) => {
       })}
     </Link>
   );
-};
-
-ActiveLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
 };
 
 const links = [
@@ -49,35 +47,36 @@ const links = [
 
 export default function Header() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.nav_logo}>
-        <h1 className={styles.logotitle}>
-          <Link href="/">
-            <a className={styles.logotitlelink}>mihail-antonov.dev</a>
-          </Link>
-        </h1>
+    <header className={styles.header}>
+      <div className={layout.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.nav_logo}>
+            <h1 className={styles.nav_logo_title}>
+              <Link href="/">
+                <a className={styles.nav_logo_link}>mihail-antonov.dev</a>
+              </Link>
+            </h1>
+          </div>
+          <div className={styles.nav_button}>
+            <Hamburger size={26} direction="right" />
+          </div>
+          <div className={styles.nav_bar}>
+            <nav className={styles.nav_nav}>
+              <ul className={styles.nav_list}>
+                {links.map((link, index) => {
+                  return (
+                    <li key={index} className={styles.nav_item}>
+                      <ActiveLink href={link.path}>
+                        <a className={styles.nav_item_link}>{link.name}</a>
+                      </ActiveLink>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-      <div className={styles.nav_button}>
-        <Hamburger size={26} direction="right" />
-      </div>
-      <div className={styles.nav_list}>
-        <nav>
-          <ul>
-            {links.map((link, index) => {
-              return (
-                <li key={index} className={styles.nav_item}>
-                  <ActiveLink
-                    activeClassName={styles.header_navlink_active}
-                    href={link.path}
-                  >
-                    <a className={styles.headernavlink}>{link.name}</a>
-                  </ActiveLink>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </div>
-    </div>
+    </header>
   );
 }

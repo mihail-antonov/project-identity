@@ -1,0 +1,23 @@
+.footer {
+  display: block;
+
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    .social {
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .footer {
+    .wrapper {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+}
