@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/layout/layout";
+import Cover from "../components/cover/cover";
 import TextField from "@material-ui/core/TextField";
 
 import layout from "../components/layout/layout.module.scss";
-import cover from "../styles/partials/cover.module.scss";
 import styles from "../styles/contact.module.scss";
 
 export default function Contact() {
@@ -16,29 +15,13 @@ export default function Contact() {
         <title>mihail-antonov.dev - Contact</title>
       </Head>
 
-      <div className={cover.cover}>
-        <div className={layout.container}>
-          <div className={cover.wrapper}>
-            <div className={cover.image_box}>
-              <Image
-                src="/img/avatar.png"
-                alt="hi"
-                className={cover.image_box_img}
-                width="480px"
-                height="480px"
-              />
-            </div>
-            <div className={cover.text_box}>
-              <h2 className={cover.text_box_title}>
-                Frontend developer with a vision
-              </h2>
-              <p className={cover.text_box_paragraph}>
-                I game, code and drink coffee.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Cover
+        coverImage="/img/avatar.png"
+        coverAlt="Contact Me"
+        coverCaption=""
+        coverTitle="Oh hello! I knew we were gonna talk."
+        coverParagraph="You can reach me by using the contact form below or email me on contact@mihail-antonov.dev"
+      />
 
       <div id="contact">
         <div className={layout.container}>

@@ -1,13 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/layout";
+import Cover from "../components/cover/cover";
 import { GraphQLClient } from "graphql-request";
-
 import CallMadeIcon from "@material-ui/icons/CallMade";
 
 import layout from "../components/layout/layout.module.scss";
-import cover from "../styles/partials/cover.module.scss";
 import styles from "../styles/about.module.scss";
 
 export default function About({ works, educations }) {
@@ -19,29 +17,13 @@ export default function About({ works, educations }) {
         <title>mihail-antonov.dev - About</title>
       </Head>
 
-      <div className={cover.cover}>
-        <div className={layout.container}>
-          <div className={cover.wrapper}>
-            <div className={cover.image_box}>
-              <Image
-                src="/img/avatar.png"
-                alt="hi"
-                className={cover.image_box_img}
-                width="480px"
-                height="480px"
-              />
-            </div>
-            <div className={cover.text_box}>
-              <h2 className={cover.text_box_title}>
-                Frontend developer with a vision
-              </h2>
-              <p className={cover.text_box_paragraph}>
-                I game, code and drink coffee.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Cover
+        coverImage="/img/avatar.png"
+        coverAlt="About Me"
+        coverCaption=""
+        coverTitle="Frontend developer with a vision"
+        coverParagraph="I game, code and drink coffee."
+      />
 
       <div className={styles.resume}>
         <div className={layout.container}>
