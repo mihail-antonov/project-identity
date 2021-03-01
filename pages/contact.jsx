@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Layout from "../components/layout/layout";
-import Cover from "../components/cover/cover";
 import TextField from "@material-ui/core/TextField";
 
 import layout from "../components/layout/layout.module.scss";
@@ -14,14 +13,6 @@ export default function Contact() {
         <meta name="keywords" content=" " />
         <title>mihail-antonov.dev - Contact</title>
       </Head>
-
-      <Cover
-        coverImage="/img/avatar.png"
-        coverAlt="Contact Me"
-        coverCaption=""
-        coverTitle="Oh hello! I knew we were gonna talk."
-        coverParagraph="You can reach me by using the contact form below or email me on contact@mihail-antonov.dev"
-      />
 
       <div id="contact">
         <div className={layout.container}>

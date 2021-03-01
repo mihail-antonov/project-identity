@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout/layout";
-import Cover from "../components/cover/cover";
 import { GraphQLClient } from "graphql-request";
 import CallMadeIcon from "@material-ui/icons/CallMade";
 
@@ -16,14 +15,6 @@ export default function About({ works, educations }) {
         <meta name="keywords" content=" " />
         <title>mihail-antonov.dev - About</title>
       </Head>
-
-      <Cover
-        coverImage="/img/avatar.png"
-        coverAlt="About Me"
-        coverCaption=""
-        coverTitle="Frontend developer with a vision"
-        coverParagraph="I game, code and drink coffee."
-      />
 
       <div className={styles.resume}>
         <div className={layout.container}>
