@@ -24,9 +24,13 @@ export default function Home() {
       <div className={styles.hello}>
         <div className={layout.container}>
           <div className={styles.hello__wrapper}>
-            <p className={styles.hello__caption}>Hey, my name is</p>
-            <h1 className={styles.hello__title}>Mihail Antonov</h1>
-            <p className={styles.hello__subtitle}>I code things for the web.</p>
+            <div className={styles.hello__headings}>
+              <p className={styles.hello__caption}>Hey, my name is</p>
+              <h1 className={styles.hello__title}>Mihail Antonov</h1>
+              <p className={styles.hello__subtitle}>
+                I code things for the web.
+              </p>
+            </div>
             <p className={styles.hello__content}>
               I'm a frontend web developer based in Veliko Turnovo, BG
               specializing in coding (and ocasionally designing) different types
@@ -74,13 +78,13 @@ export default function Home() {
       <div className={styles.project}>
         <div className={layout.container}>
           <div className={styles.project__wrapper}>
-            <p className={styles.project__subtitle}>Latest Projects</p>
-            <h2 className={styles.project__title}>My recent projects</h2>
+            <div className={styles.project__headings}>
+              <p className={styles.project__subtitle}>Latest Projects</p>
+              <h2 className={styles.project__title}>My recent projects</h2>
+            </div>
             <div className={styles.project__content}>
               <Swiper
                 spaceBetween={20}
-                slidesPerView={1}
-                loop
                 breakpoints={{
                   768: {
                     slidesPerView: 2,
@@ -108,9 +112,7 @@ export default function Home() {
                     <div className={styles.project__box__tech}>
                       <ul className={styles.project__box__list}>
                         <li className={styles.project__box_item}>NextJS</li>
-                        <li className={styles.project__box_item}>
-                          SCSS Modules
-                        </li>
+                        <li className={styles.project__box_item}>SCSS</li>
                         <li className={styles.project__box_item}>GraphCMS</li>
                       </ul>
                     </div>
@@ -134,9 +136,7 @@ export default function Home() {
                     <div className={styles.project__box__tech}>
                       <ul className={styles.project__box__list}>
                         <li className={styles.project__box_item}>NextJS</li>
-                        <li className={styles.project__box_item}>
-                          SCSS Modules
-                        </li>
+                        <li className={styles.project__box_item}>SCSS</li>
                         <li className={styles.project__box_item}>GraphCMS</li>
                       </ul>
                     </div>
@@ -160,9 +160,7 @@ export default function Home() {
                     <div className={styles.project__box__tech}>
                       <ul className={styles.project__box__list}>
                         <li className={styles.project__box_item}>NextJS</li>
-                        <li className={styles.project__box_item}>
-                          SCSS Modules
-                        </li>
+                        <li className={styles.project__box_item}>SCSS</li>
                         <li className={styles.project__box_item}>GraphCMS</li>
                       </ul>
                     </div>
@@ -186,9 +184,7 @@ export default function Home() {
                     <div className={styles.project__box__tech}>
                       <ul className={styles.project__box__list}>
                         <li className={styles.project__box_item}>NextJS</li>
-                        <li className={styles.project__box_item}>
-                          SCSS Modules
-                        </li>
+                        <li className={styles.project__box_item}>SCSS</li>
                         <li className={styles.project__box_item}>GraphCMS</li>
                       </ul>
                     </div>
@@ -212,9 +208,7 @@ export default function Home() {
                     <div className={styles.project__box__tech}>
                       <ul className={styles.project__box__list}>
                         <li className={styles.project__box_item}>NextJS</li>
-                        <li className={styles.project__box_item}>
-                          SCSS Modules
-                        </li>
+                        <li className={styles.project__box_item}>SCSS</li>
                         <li className={styles.project__box_item}>GraphCMS</li>
                       </ul>
                     </div>
@@ -232,8 +226,10 @@ export default function Home() {
       <div className={styles.contact}>
         <div className={layout.container}>
           <div className={styles.contact__wrapper}>
-            <p className={styles.contact__subtitle}>What's Next?</p>
-            <h3 className={styles.contact__title}>Get in Touch</h3>
+            <div className={styles.contact__headings}>
+              <p className={styles.contact__subtitle}>What's Next?</p>
+              <h3 className={styles.contact__title}>Get in Touch</h3>
+            </div>
             <p className={styles.contact__text}>
               Aenean eleifend, eros vitae condimentum efficitur, est libero
               euismod neque, placerat semper ipsum ex eu dolor. Donec lobortis

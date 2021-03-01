@@ -1,0 +1,125 @@
+@import "./abstracts/variables";
+
+.hello {
+  .hello__wrapper {
+    padding: 40px 0;
+
+    .hello__headings {
+      .hello__caption {
+        font-family: $font-secondary;
+        font-size: 14px;
+        margin: 0 0 20px 0;
+      }
+
+      .hello__title {
+        font-size: 36px;
+        line-height: 1.1;
+      }
+
+      .hello__subtitle {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 10px 0 0 0;
+      }
+    }
+
+    .hello__content {
+      font-size: 14px;
+      margin: 20px 0 40px 0;
+    }
+
+    .hello__button {
+      color: $hover;
+      font-family: $font-secondary;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid $hover;
+      border-radius: 4px;
+      padding: 14px 22px;
+    }
+  }
+}
+
+.project {
+  .project__wrapper {
+    padding: 40px 0;
+
+    .project__headings {
+      text-align: center;
+      margin: 0 0 30px 0;
+
+      .project__subtitle {
+        font-family: $font-secondary;
+        font-size: 14px;
+      }
+
+      .project__title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+
+    .project__content {
+      margin: 0 0 30px 0;
+
+      .project__box {
+        background: #fafafa;
+        border-radius: 4px;
+        padding: 30px;
+
+        .project__box__icons {
+          margin: 0 0 30px 0;
+        }
+
+        .project__box__content {
+          margin: 0 0 20px 0;
+
+          .project__box__title {
+            font-size: 18px;
+            line-height: 1.2;
+            margin: 0 0 10px 0;
+          }
+
+          .project__box__text {
+            font-size: 14px;
+            line-height: 1.4;
+          }
+        }
+
+        .project__box__tech {
+          .project__box__list {
+            padding: 0;
+
+            .project__box_item {
+              display: inline;
+              font-family: $font-secondary;
+              font-size: 12px;
+              margin: 0 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  .contact__wrapper {
+    .contact__headings {
+      text-align: center;
+      margin: 0 0 30px 0;
+
+      .contact__subtitle {
+        font-family: $font-secondary;
+        font-size: 14px;
+      }
+
+      .contact__title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}
