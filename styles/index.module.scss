@@ -2,42 +2,62 @@
 
 .hello {
   .hello__wrapper {
-    padding: 40px 0;
+    padding: 80px 0;
 
     .hello__headings {
+      margin: 0 0 30px 0;
+
       .hello__caption {
+        color: $active;
         font-family: $font-secondary;
-        font-size: 14px;
-        margin: 0 0 20px 0;
+        font-size: 16px;
+        margin: 0 0 16px 0;
       }
 
       .hello__title {
-        font-size: 36px;
-        line-height: 1.1;
+        color: #ccd6f6;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0 0 10px 0;
       }
 
       .hello__subtitle {
-        font-size: 26px;
+        color: $text;
+        font-size: 30px;
         font-weight: 600;
         line-height: 1;
-        margin: 10px 0 0 0;
       }
     }
 
     .hello__content {
-      font-size: 14px;
-      margin: 20px 0 40px 0;
+      .hello__text {
+        color: $text;
+        font-size: 14px;
+        max-width: 500px;
+        margin: 0 0 60px 0;
+      }
+    }
+  }
+}
+
+.about {
+  .about__wrapper {
+    padding: 40px 0;
+
+    .about__title {
+      color: $heading;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 30px 0;
     }
 
-    .hello__button {
-      color: $hover;
-      font-family: $font-secondary;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-      border: 1px solid $hover;
-      border-radius: 4px;
-      padding: 14px 22px;
+    .about__content {
+      .about__text {
+        color: $text;
+        font-size: 14px;
+        margin: 0 0 15px 0;
+      }
     }
   }
 }
@@ -51,11 +71,13 @@
       margin: 0 0 30px 0;
 
       .project__subtitle {
+        color: $active;
         font-family: $font-secondary;
         font-size: 14px;
       }
 
       .project__title {
+        color: $heading;
         font-size: 24px;
         font-weight: 600;
       }
@@ -65,24 +87,45 @@
       margin: 0 0 30px 0;
 
       .project__box {
-        background: #fafafa;
+        box-shadow: 0 6px 12px #070b1a;
+        background: $mid-blue;
         border-radius: 4px;
         padding: 30px;
 
         .project__box__icons {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
           margin: 0 0 30px 0;
+
+          .project__icons__main {
+            svg {
+              color: $active;
+              font-size: 40px;
+            }
+          }
+
+          .project__icons__links {
+            svg {
+              color: $text;
+              font-size: 26px;
+            }
+          }
         }
 
         .project__box__content {
           margin: 0 0 20px 0;
 
           .project__box__title {
+            color: $heading;
             font-size: 18px;
             line-height: 1.2;
             margin: 0 0 10px 0;
           }
 
           .project__box__text {
+            color: $text;
             font-size: 14px;
             line-height: 1.4;
           }
@@ -93,6 +136,7 @@
             padding: 0;
 
             .project__box_item {
+              color: $text;
               display: inline;
               font-family: $font-secondary;
               font-size: 12px;
@@ -112,13 +156,50 @@
       margin: 0 0 30px 0;
 
       .contact__subtitle {
+        color: $active;
         font-family: $font-secondary;
         font-size: 14px;
       }
 
       .contact__title {
+        color: $heading;
         font-size: 24px;
         font-weight: 600;
+      }
+    }
+
+    .contact__content {
+      .contact__text {
+        color: $text;
+        font-size: 14px;
+        margin: 0 auto 20px auto;
+        max-width: 500px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .project {
+    .project__wrapper {
+      padding: 40px 0;
+
+      .project__headings {
+        text-align: center;
+        margin: 0 0 50px 0;
+
+        .project__subtitle {
+          color: $active;
+          font-family: $font-secondary;
+          font-size: 14px;
+        }
+
+        .project__title {
+          color: $heading;
+          font-size: 32px;
+          font-weight: 600;
+        }
       }
     }
   }

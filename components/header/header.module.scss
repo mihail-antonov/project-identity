@@ -1,8 +1,6 @@
 @import "../../styles/abstracts/_variables.scss";
 
 .header {
-  display: block;
-
   .wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -11,21 +9,19 @@
     padding: 20px 0;
 
     .nav_logo {
-      display: block;
-
       .nav_logo_title {
         font-size: 20px;
         font-weight: 500;
         margin: 0;
 
         .nav_logo_link {
-          color: $black;
+          color: $heading;
           text-decoration: none;
           padding: 10px 20px 10px 0;
         }
 
         .nav_logo_link:hover {
-          color: $hover;
+          color: $active;
           transition: 0.3s;
         }
       }
@@ -52,12 +48,12 @@
             }
 
             .nav_item_link:hover {
-              color: $hover;
+              color: $active;
               transition: 0.3s;
             }
 
             .nav_item_link_active {
-              color: $hover;
+              color: $active;
               text-decoration: none;
               padding: 10px 0 10px 60px;
             }
