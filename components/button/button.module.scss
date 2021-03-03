@@ -1,20 +1,18 @@
 @import "../../styles/abstracts/variables";
 
-.button {
-  .button__main {
-    display: inline-block;
-    color: $active;
-    font-family: $font-secondary;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    border: 1px solid $active;
-    border-radius: 4px;
-    padding: 14px 22px;
-  }
+.button__main {
+  display: inline-block;
+  color: $active;
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid $active;
+  border-radius: 4px;
+  padding: 14px 22px;
+}
 
-  .button__main:hover {
-    background: rgba(111, 255, 233, 0.15);
-    transition: 0.3s;
-  }
+.button__main:hover {
+  background: rgba(111, 255, 233, 0.1);
+  transition: 0.3s;
 }

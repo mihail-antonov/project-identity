@@ -8,7 +8,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 40px 0;
 
     .social {
       display: flex;
@@ -16,22 +16,27 @@
       align-items: center;
 
       .social__icon {
-        padding: 0 12px;
+        margin: 0 6px;
 
-        .social__icon__svg {
-          fill: $active;
-          height: 24px;
+        img {
+          padding: 12px !important;
+          filter: invert(94%) sepia(84%) saturate(4624%) hue-rotate(176deg)
+            brightness(77%) contrast(89%);
+        }
+
+        img:hover {
+          filter: invert(94%) sepia(76%) saturate(652%) hue-rotate(79deg)
+            brightness(118%) contrast(100%);
         }
       }
     }
-  }
-}
 
-@media (min-width: 991px) {
-  .footer {
-    .wrapper {
-      flex-flow: row nowrap;
-      justify-content: space-between;
+    .copyright {
+      .copyright__text {
+        color: $text;
+        font-family: $font-secondary;
+        font-size: 12px;
+      }
     }
   }
 }

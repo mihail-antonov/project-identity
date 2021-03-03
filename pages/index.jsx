@@ -3,6 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout/layout";
 import Button from "../components/button/button";
 
+import DetailsIcon from "@material-ui/icons/Details";
 import ShoppingBasketTwoToneIcon from "@material-ui/icons/ShoppingBasketTwoTone";
 import HomeWorkTwoToneIcon from "@material-ui/icons/HomeWorkTwoTone";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
@@ -50,28 +51,52 @@ export default function Home() {
       <div className={styles.about}>
         <div className={layout.container}>
           <div className={styles.about__wrapper}>
-            <h2 className={styles.about__title}>About Me</h2>
+            <div className={styles.about__headings}>
+              <h2 className={styles.about__title}>About Me</h2>
+            </div>
             <div className={layout.grid2}>
-              <div className={styles.about__content}>
-                <p className={styles.about__text}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                  tellus ligula.
-                </p>
-                <p className={styles.about__text}>
-                  Aenean eleifend, eros vitae condimentum efficitur, est libero
-                  euismod neque, placerat semper ipsum ex eu dolor. Donec
-                  lobortis egestas consectetur. Aenean ut cursus velit, rutrum
-                  faucibus mi.
-                </p>
-                <p className={styles.about__text}>
-                  Praesent vestibulum placerat fermentum. Donec in dapibus enim,
-                  quis hendrerit leo. Sed tristique consectetur ultrices. Aenean
-                  sed egestas turpis.
-                </p>
-                <p className={styles.about__text}>
-                  Skills that I possess for now:
-                </p>
-                <Button href="/about" title="More Info" />
+              <div className={styles.about__info}>
+                <div className={styles.about__content}>
+                  <p className={styles.about__text}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam tellus ligula.
+                  </p>
+                  <p className={styles.about__text}>
+                    Aenean eleifend, eros vitae condimentum efficitur, est
+                    libero euismod neque, placerat semper ipsum ex eu dolor.
+                    Donec lobortis egestas consectetur. Aenean ut cursus velit,
+                    rutrum faucibus mi.
+                  </p>
+                  <p className={styles.about__text}>
+                    Praesent vestibulum placerat fermentum. Donec in dapibus
+                    enim, quis hendrerit leo. Sed tristique consectetur
+                    ultrices. Aenean sed egestas turpis.
+                  </p>
+                  <p className={styles.about__text}>
+                    Few recent technologies I have been working with:
+                  </p>
+                  <ul className={styles.about__list}>
+                    <li className={styles.about__item}>
+                      <DetailsIcon />
+                      JavaScript
+                    </li>
+                    <li className={styles.about__item}>
+                      <DetailsIcon />
+                      HTML
+                    </li>
+                    <li className={styles.about__item}>
+                      <DetailsIcon />
+                      SCSS
+                    </li>
+                    <li className={styles.about__item}>
+                      <DetailsIcon />
+                      ReactJS
+                    </li>
+                  </ul>
+                </div>
+                <div className={styles.about__button}>
+                  <Button href="/about" title="More Info" />
+                </div>
               </div>
               <div className={styles.about__image}>Image of Me here.</div>
             </div>
@@ -142,7 +167,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Button href="/work" title="View Portfolio" />
+            <div className={styles.project__button}>
+              <Button href="/work" title="View Portfolio" />
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +188,9 @@ export default function Home() {
                 egestas consectetur. Aenean ut cursus velit, rutrum faucibus mi.
               </p>
             </div>
-            <Button href="/contact" title="Get in Touch" />
+            <div className={styles.contact__button}>
+              <Button href="/contact" title="Get in Touch" />
+            </div>
           </div>
         </div>
       </div>

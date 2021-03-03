@@ -43,20 +43,57 @@
 
 .about {
   .about__wrapper {
-    padding: 40px 0;
+    padding: 60px 0;
 
-    .about__title {
-      color: $heading;
-      font-size: 24px;
-      font-weight: 600;
+    .about__headings {
       margin: 0 0 30px 0;
+
+      .about__title {
+        width: 100%;
+        color: $heading;
+        font-size: 26px;
+        font-weight: 600;
+      }
     }
 
-    .about__content {
-      .about__text {
-        color: $text;
-        font-size: 14px;
-        margin: 0 0 15px 0;
+    .about__info {
+      .about__content {
+        margin: 0 0 40px 0;
+
+        .about__text {
+          color: $text;
+          font-size: 14px;
+          margin: 0 0 15px 0;
+        }
+
+        .about__list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          max-width: 500px;
+          padding: 0;
+          list-style: none;
+
+          .about__item {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            color: $text;
+            font-size: 14px;
+            line-height: 1.6;
+
+            svg {
+              font-size: 12px;
+              color: #6fffe9;
+              margin: 0 8px 0 0;
+            }
+          }
+        }
+      }
+
+      .about__button {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
       }
     }
   }
@@ -64,7 +101,7 @@
 
 .project {
   .project__wrapper {
-    padding: 40px 0;
+    padding: 60px 0;
 
     .project__headings {
       text-align: center;
@@ -78,13 +115,13 @@
 
       .project__title {
         color: $heading;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 600;
       }
     }
 
     .project__content {
-      margin: 0 0 30px 0;
+      margin: 0 0 40px 0;
 
       .project__box {
         box-shadow: 0 6px 12px #070b1a;
@@ -146,14 +183,21 @@
         }
       }
     }
+    .project__button {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
   }
 }
 
 .contact {
   .contact__wrapper {
+    padding: 60px 0;
+
     .contact__headings {
       text-align: center;
-      margin: 0 0 30px 0;
+      margin: 0 0 20px 0;
 
       .contact__subtitle {
         color: $active;
@@ -163,7 +207,7 @@
 
       .contact__title {
         color: $heading;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 600;
       }
     }
@@ -172,10 +216,16 @@
       .contact__text {
         color: $text;
         font-size: 14px;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 40px auto;
         max-width: 500px;
         text-align: center;
       }
+    }
+
+    .contact__button {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
     }
   }
 }
