@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { Children } from "react";
-import PropTypes from "prop-types";
 import { Twirl as Hamburger } from "hamburger-react";
 
 import styles from "./header.module.scss";
