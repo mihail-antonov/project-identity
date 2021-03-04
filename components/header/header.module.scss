@@ -42,9 +42,10 @@
             display: inline;
 
             .nav_item_link {
-              color: #757575;
+              color: $text;
+              font-family: $font-secondary;
               text-decoration: none;
-              padding: 10px 0 10px 60px;
+              padding: 20px 35px;
             }
 
             .nav_item_link:hover {
@@ -54,8 +55,9 @@
 
             .nav_item_link_active {
               color: $active;
+              font-family: $font-secondary;
               text-decoration: none;
-              padding: 10px 0 10px 60px;
+              padding: 20px 35px;
             }
           }
         }

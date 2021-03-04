@@ -16,8 +16,8 @@ export default function Header() {
                   <Image
                     src="/img/social/github.svg"
                     alt="Github Profile"
-                    width={20}
-                    height={20}
+                    width={22}
+                    height={22}
                   />
                 </a>
               </Link>

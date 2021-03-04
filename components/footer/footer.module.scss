@@ -1,8 +1,6 @@
 @import "../../styles/abstracts/variables";
 
 .footer {
-  display: block;
-
   .wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -14,6 +12,7 @@
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
+      margin: 0 0 10px 0;
 
       .social__icon {
         margin: 0 6px;

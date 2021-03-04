@@ -2,9 +2,12 @@
 
 .resume {
   .wrapper {
+    padding: 60px 0;
+
     .resume__heading {
-      font-size: 24px;
-      font-weight: 400;
+      color: $heading;
+      font-size: 26px;
+      font-weight: 600;
       margin: 0 0 10px 0;
     }
 

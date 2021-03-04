@@ -7,6 +7,7 @@ import DetailsIcon from "@material-ui/icons/Details";
 import ShoppingBasketTwoToneIcon from "@material-ui/icons/ShoppingBasketTwoTone";
 import HomeWorkTwoToneIcon from "@material-ui/icons/HomeWorkTwoTone";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
+import ChangeHistoryTwoToneIcon from "@material-ui/icons/ChangeHistoryTwoTone";
 
 import layout from "../components/layout/layout.module.scss";
 import styles from "../styles/index.module.scss";
@@ -143,6 +144,32 @@ export default function Home() {
                   <div className={styles.project__box__icons}>
                     <div className={styles.project__icons__main}>
                       <ShoppingBasketTwoToneIcon />
+                    </div>
+                    <div className={styles.project__icons__links}>
+                      <OpenInNewIcon />
+                    </div>
+                  </div>
+                  <div className={styles.project__box__content}>
+                    <h4 className={styles.project__box__title}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h4>
+                    <p className={styles.project__box__text}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam tellus ligula, fringilla in imperdiet.
+                    </p>
+                  </div>
+                  <div className={styles.project__box__tech}>
+                    <ul className={styles.project__box__list}>
+                      <li className={styles.project__box_item}>NextJS</li>
+                      <li className={styles.project__box_item}>SCSS</li>
+                      <li className={styles.project__box_item}>GraphCMS</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={styles.project__box}>
+                  <div className={styles.project__box__icons}>
+                    <div className={styles.project__icons__main}>
+                      <ChangeHistoryTwoToneIcon />
                     </div>
                     <div className={styles.project__icons__links}>
                       <OpenInNewIcon />
