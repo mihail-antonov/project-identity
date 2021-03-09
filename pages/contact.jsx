@@ -14,6 +14,25 @@ export default function Contact() {
         <title>mihail-antonov.dev - Contact</title>
       </Head>
 
+      <div className={styles.contact}>
+        <div className={layout.container}>
+          <div className={styles.wrapper}>
+            <div className={layout.grid2}>
+              <div className={styles.content}>asdasdasd</div>
+              <div className={styles.content__headings}>
+                <h2>How can I help?</h2>
+                <p>
+                  Please select a topic below related to your inquiry. If you
+                  don't find what you need or just want to say hi, fill out the
+                  contact form.
+                </p>
+              </div>
+              <div className={styles.form}>asdasdasd</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="contact">
         <div className={layout.container}>
           <div className={styles.wrapper}>

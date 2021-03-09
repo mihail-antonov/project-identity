@@ -2,17 +2,18 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout/layout";
 import Button from "../components/button/button";
+import { GraphQLClient } from "graphql-request";
 
 import DetailsIcon from "@material-ui/icons/Details";
+import DetailsTwoToneIcon from "@material-ui/icons/DetailsTwoTone";
 import ShoppingBasketTwoToneIcon from "@material-ui/icons/ShoppingBasketTwoTone";
-import HomeWorkTwoToneIcon from "@material-ui/icons/HomeWorkTwoTone";
+import GradeTwoToneIcon from "@material-ui/icons/GradeTwoTone";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
-import ChangeHistoryTwoToneIcon from "@material-ui/icons/ChangeHistoryTwoTone";
 
 import layout from "../components/layout/layout.module.scss";
 import styles from "../styles/index.module.scss";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <Layout>
       <Head>
@@ -39,8 +40,8 @@ export default function Home() {
             </div>
             <div className={styles.hello__content}>
               <p className={styles.hello__text}>
-                I'm a frontend web developer based in Veliko Turnovo, BG
-                specializing in coding (and ocasionally designing) different
+                I'm a freelance frontend web developer based in Veliko Tarnovo,
+                BG specializing in coding (and ocasionally designing) different
                 types of websites.
               </p>
               <Button href="/contact" title="Get in Touch" />
@@ -59,8 +60,8 @@ export default function Home() {
               <div className={styles.about__info}>
                 <div className={styles.about__content}>
                   <p className={styles.about__text}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam tellus ligula.
+                    Hello! I'm Mihail, a freelance frontend web developer based
+                    in Veliko Tarnovo, BG.
                   </p>
                   <p className={styles.about__text}>
                     Aenean eleifend, eros vitae condimentum efficitur, est
@@ -114,84 +115,52 @@ export default function Home() {
             </div>
             <div className={styles.project__content}>
               <div className={layout.grid3}>
-                <div className={styles.project__box}>
-                  <div className={styles.project__box__icons}>
-                    <div className={styles.project__icons__main}>
-                      <HomeWorkTwoToneIcon />
+                {projects.map(
+                  ({
+                    project_title,
+                    project_icon,
+                    project_url,
+                    project_description,
+                    project_technologies,
+                  }) => (
+                    <div className={styles.project__box} key={projects.id}>
+                      <div className={styles.project__box__icons}>
+                        <div className={styles.project__icons__main}>
+                          {
+                            {
+                              Website: <DetailsTwoToneIcon />,
+                              eCommerce: <ShoppingBasketTwoToneIcon />,
+                            }[project_icon]
+                          }
+                        </div>
+                        <div className={styles.project__icons__links}>
+                          <Link href={project_url}>
+                            <a target="_blank">
+                              <OpenInNewIcon />
+                            </a>
+                          </Link>
+                        </div>
+                      </div>
+                      <div className={styles.project__box__content}>
+                        <h4 className={styles.project__box__title}>
+                          {project_title}
+                        </h4>
+                        <p className={styles.project__box__text}>
+                          {project_description}
+                        </p>
+                      </div>
+                      <div className={styles.project__box__tech}>
+                        <ul className={styles.project__box__list}>
+                          {project_technologies.map((project_technologies) => (
+                            <li className={styles.project__box_item}>
+                              {project_technologies}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                    <div className={styles.project__icons__links}>
-                      <OpenInNewIcon />
-                    </div>
-                  </div>
-                  <div className={styles.project__box__content}>
-                    <h4 className={styles.project__box__title}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h4>
-                    <p className={styles.project__box__text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Etiam tellus ligula, fringilla in imperdiet.
-                    </p>
-                  </div>
-                  <div className={styles.project__box__tech}>
-                    <ul className={styles.project__box__list}>
-                      <li className={styles.project__box_item}>NextJS</li>
-                      <li className={styles.project__box_item}>SCSS</li>
-                      <li className={styles.project__box_item}>GraphCMS</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className={styles.project__box}>
-                  <div className={styles.project__box__icons}>
-                    <div className={styles.project__icons__main}>
-                      <ShoppingBasketTwoToneIcon />
-                    </div>
-                    <div className={styles.project__icons__links}>
-                      <OpenInNewIcon />
-                    </div>
-                  </div>
-                  <div className={styles.project__box__content}>
-                    <h4 className={styles.project__box__title}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h4>
-                    <p className={styles.project__box__text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Etiam tellus ligula, fringilla in imperdiet.
-                    </p>
-                  </div>
-                  <div className={styles.project__box__tech}>
-                    <ul className={styles.project__box__list}>
-                      <li className={styles.project__box_item}>NextJS</li>
-                      <li className={styles.project__box_item}>SCSS</li>
-                      <li className={styles.project__box_item}>GraphCMS</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className={styles.project__box}>
-                  <div className={styles.project__box__icons}>
-                    <div className={styles.project__icons__main}>
-                      <ChangeHistoryTwoToneIcon />
-                    </div>
-                    <div className={styles.project__icons__links}>
-                      <OpenInNewIcon />
-                    </div>
-                  </div>
-                  <div className={styles.project__box__content}>
-                    <h4 className={styles.project__box__title}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h4>
-                    <p className={styles.project__box__text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Etiam tellus ligula, fringilla in imperdiet.
-                    </p>
-                  </div>
-                  <div className={styles.project__box__tech}>
-                    <ul className={styles.project__box__list}>
-                      <li className={styles.project__box_item}>NextJS</li>
-                      <li className={styles.project__box_item}>SCSS</li>
-                      <li className={styles.project__box_item}>GraphCMS</li>
-                    </ul>
-                  </div>
-                </div>
+                  )
+                )}
               </div>
             </div>
             <div className={styles.project__button}>
@@ -223,4 +192,31 @@ export default function Home() {
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const graphcms = new GraphQLClient(
+    "https://api-eu-central-1.graphcms.com/v2/cklat581wxmoi01z66jvg7lqt/master"
+  );
+
+  const { projects } = await graphcms.request(
+    `
+    {
+      projects 
+      {
+        project_title
+        project_icon
+        project_url
+        project_description
+        project_technologies
+      }
+    }
+    `
+  );
+
+  return {
+    props: {
+      projects,
+    },
+  };
 }
